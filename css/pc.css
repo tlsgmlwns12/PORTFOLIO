@@ -292,7 +292,7 @@ a {
 #gate {
     width: 100%;
     background-color: #fff;
-    height: 1240px;
+    height: 100vh;
     display: flex;
 	justify-content: center;
 	align-items: center;
