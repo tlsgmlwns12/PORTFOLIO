@@ -1,0 +1,531 @@
+
+
+a { 
+    text-decoration: none;
+    color: #fff;
+}
+
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #1d1d1d;
+    background-color: #1d1d1d;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+}
+
+
+.cursor-grow {
+    transform: scale(2);
+    background-color: var(--color-texta);
+}
+
+.color1 {
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      animation-name: move, fadeOut;
+      animation-duration: 1s ;
+      background-color: #EDCDBB;
+      animation-fill-mode	:forwards;
+      right: 0;
+}
+
+.color2 {
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      animation-name: move, fadeOut;
+      animation-duration: 2s ;
+      background-color: #E3B7A0;
+      animation-fill-mode	:forwards;
+      right: 0;
+
+}
+
+.color3 {
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      animation-name: move, fadeOut;
+      animation-duration: 3s ;
+      background-color: #BF9270;
+      animation-fill-mode	:forwards;
+      right: 0;
+
+}
+
+@keyframes move {
+    from { width: 100%;
+    }
+    to   { width: 0%; }
+  }
+  @keyframes fadeOut {
+
+    0% {
+        opacity: 1;
+
+  
+      }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+      }
+  }
+
+.bar1 {
+    top: 5%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgb(54, 38, 22);
+    height: 40px;
+    animation-name: bar1;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.bar2 {
+    bottom: 5%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: rgb(54, 38, 22);
+    height: 40px;
+    animation-name: bar1;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bar1 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.bar1 > .bar-color {
+    height: 100%;
+    animation: color 16s infinite;
+    animation-delay: 3s;
+    z-index: 100;
+}
+
+.bar2 > .bar-color {
+    position: absolute;
+    height: 100%;
+    animation: color 16s infinite;
+    animation-delay: 3s;
+    z-index: 100;
+    right: 0;
+}
+
+
+@keyframes color {
+    
+    0% {
+        background-position: 0% 100%;
+        width: 0%;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    11% {
+        width: 100%;
+        background-color: #BF9270;
+        opacity: 0.1;
+    }
+
+    11.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    22% {
+        width: 100%;
+        background-color: #E3B7A0;
+        opacity: 0.1;
+    }
+
+    22.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    27% {
+        opacity: 1;
+    }
+
+    33% {
+        width: 100%;
+        background-color: rgb(54, 38, 22);;
+        opacity: 1;
+    }
+
+    33.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    38% {
+        opacity: 1;
+    }
+
+    44% {
+        width: 100%;
+        background-color: #BF9270;
+        opacity: 0.1;
+    }
+
+    44.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    55% {
+        width: 100%;
+        background-color: #E3B7A0;
+        opacity: 0.1;
+    }
+
+    55.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    66% {
+        width: 100%;
+        background-color: rgb(54, 38, 22);;
+        opacity: 1;
+    }
+
+    66.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    71% {
+        opacity: 1;
+    }
+
+    77% {
+        width: 100%;
+        background-color: #BF9270;
+        opacity: 0.1;
+    }
+
+    77.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    82% {
+        opacity: 1;
+    }
+
+    88% {
+        width: 100%;
+        background-color: #E3B7A0;
+        opacity: 0.1;
+    }
+
+    88.1% {
+        width: 0%;
+        opacity: 0.1;
+    }
+
+    93% {
+        opacity: 1;
+    }
+
+    99% {
+        width: 100%;
+        background-color: rgb(54, 38, 22);;
+        opacity: 1;
+    }
+
+    99.1% {
+        width: 0%;
+        opacity: 0.1;
+        background-position: 200% 100%;
+    }
+    
+}
+
+
+#gate {
+    width: 100%;
+    background-color: #fff;
+    height: 1240px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+#gate > .text-box {
+    padding-right: 400px;
+}
+
+#gate > .text-box > h1 {
+    color: #BF9270;
+    animation: fadein 1s ease-in-out;
+    font-size: 120px;
+    text-shadow: 4px 4px 4px gray;
+    text-transform: uppercase;
+    animation-delay : 2s;
+    opacity: 0;
+    animation-fill-mode	:forwards
+}
+
+#gate > .text-box > h1:before {
+    content: '신희준 PORTFOLIO 포트폴리오';
+    color: rgb(54, 38, 22);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    text-shadow: 4px 4px 4px gray;
+    overflow: hidden;
+    text-transform: uppercase;
+    animation: name 3s ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode	:forwards
+}
+
+#gate > .text-box > span:before {
+    content: '▶';
+    color: rgb(54, 38, 22);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    text-shadow: 4px 4px 4px gray;
+    overflow: hidden;
+    text-transform: uppercase;
+    animation: name 3s ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode	:forwards
+}
+
+@keyframes name {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 25%;
+    }
+
+    
+    50% {
+        height: 65%;
+    }
+    
+    75% {
+        height: 45%;
+    }
+
+    100% {
+        height: 100%;
+    }
+
+
+}
+
+
+#gate > .text-box > h1 > span:first-child {
+    animation: fadein 0s ease-in-out;
+    animation-delay : 2s;
+
+}
+
+#gate > .text-box > h1 > span:nth-child(3) {
+    animation: fadein 1s ease-in-out;
+    animation-delay : 2s;
+
+}
+
+#gate > .text-box > h1 > span:last-child {
+    animation: fadein 1.5s ease-in-out;
+    animation-delay : 2s;
+}
+
+
+@keyframes fadein{
+    0% {
+      opacity: 0;
+      text-shadow: 10px 20px 10px gray;
+      transform: translateY(80px);
+
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 4px 4px 4px gray;
+      transform: none;
+    }
+  
+  }
+
+  
+
+#gate > .text-box > span {
+
+    position: absolute;
+    top: 46%;
+    right: 27%;
+    transform: translateY(-46%);
+    color: #BF9270;
+    text-shadow: 4px 4px 4px gray;
+    font-size: 80px;
+    animation: fadein 1s ease-in-out 2.5s ,
+    btn 1s linear infinite 4s;
+    opacity: 0;
+    animation-fill-mode	:forwards
+
+}
+
+@keyframes btn {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+
+
+    50% {
+        transform: scale(1.1);
+    }
+
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+
+
+
+.color4 {
+    position: absolute;
+      width: 30%;
+      height: 1240px;
+      right: 0;
+      background-color: #BF9270;
+      opacity: 0;
+      animation: open;
+      animation-play-state:paused;
+      transition: all 1s;
+}
+
+.color4:hover {
+    width: 40%;
+    animation: open;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes open {
+
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 40%;
+        opacity: 1;
+    }
+}
+
+.menu {
+    color: #fff;
+    font-size: 32px;
+    margin-top: 120px;
+    margin-left: 60px;
+}
+
+.menu > li {
+    margin-bottom: 40px;
+}
+
+.menu > li > ul {
+    display: none;
+}
+
+.menu > li > ul > li {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.menu > li > ul.on {
+    display: block;
+}
+
+.wow {
+    position: relative;
+    outline: 1px solid red;
+    width: 100%;
+    height: 2080px;
+}
+
+.top-btn {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: rgba(191, 146, 112, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.top-btn:hover {
+
+    background-color: #BF9270;
+    color: #fff;
+}
+
