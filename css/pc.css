@@ -293,16 +293,19 @@ a {
     width: 100%;
     background-color: #fff;
     height: 100vh;
-    display: flex;
-	justify-content: center;
-	align-items: center;
+   
 
 }
 
 
 
 #gate > .text-box {
+    position: absolute;
     padding-right: 400px;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translatey(-50%);
 }
 
 #gate > .text-box > h1 {
@@ -313,7 +316,8 @@ a {
     text-transform: uppercase;
     animation-delay : 2s;
     opacity: 0;
-    animation-fill-mode	:forwards
+    animation-fill-mode	:forwards;
+    margin-right: 300px;
 }
 
 #gate > .text-box > h1:before {
@@ -329,7 +333,7 @@ a {
     text-transform: uppercase;
     animation: name 3s ease-in-out;
     animation-delay: 3s;
-    animation-fill-mode	:forwards
+    animation-fill-mode	:forwards;
 }
 
 #gate > .text-box > span:before {
