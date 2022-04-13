@@ -311,7 +311,7 @@ a {
 #gate > .text-box > h1 {
     color: #BF9270;
     animation: fadein 1s ease-in-out;
-    font-size: 115px;
+    font-size: 120px;
     text-shadow: 4px 4px 4px gray;
     text-transform: uppercase;
     animation-delay : 2s;
