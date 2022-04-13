@@ -453,7 +453,7 @@ a {
 .color4 {
     position: absolute;
       width: 30%;
-      height: 1240px;
+      height: 100vh;
       right: 0;
       background-color: #BF9270;
       opacity: 0;
